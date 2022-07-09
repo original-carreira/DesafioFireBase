@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="250dp"
+    android:layout_height="250dp"
+    app:cardCornerRadius="10dp"
+    app:strokeWidth="1dp"
+    app:cardElevation="0dp"
+    android:layout_margin="@dimen/meia_margem">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:srcCompat="@drawable/index"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="94dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/item_card_modelo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <TextView
+                android:layout_width="238dp"
+                android:layout_height="26dp"
+                android:text="@string/texto_nomeDoGame"
+                android:textAppearance="?attr/textAppearanceHeadline6"/>
+            <TextView
+                android:layout_width="238dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/texto_data_game"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/secondaryColor"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

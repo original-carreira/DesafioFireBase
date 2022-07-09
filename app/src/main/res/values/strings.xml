@@ -5,4 +5,6 @@
     <string name="email">Email</string>
     <string name="remember">Remember</string>
     <string name="senha">Senha</string>
+    <string name="texto_data_game">Data Lançamento</string>
+    <string name="texto_nomeDoGame">Nome do Game</string>
 </resources>
