@@ -1,13 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.login.TelaLoginFragment">
 
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello" />
+        android:background="@drawable/wallpaper">
 
-</FrameLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/login_box_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/meia_margem"
+            android:background="@drawable/card_modelo"
+            android:elevation="@dimen/card_elevation"
+            android:padding="@dimen/meia_margem"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineVertical_start_boxMain"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="@dimen/margem" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineVertical_end_boxMain"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="@dimen/margem" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_emailUser_login"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margem"
+                android:layout_marginTop="@dimen/margem_top_login"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editText_emailUser_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_senhaUser_login"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margem"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_emailUser_login">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/senha"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/checkbox_Remember"
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:layout_margin="@dimen/meia_margem"
+                android:padding="@dimen/meia_margem"
+                android:text="@string/remember"
+                app:layout_constraintEnd_toEndOf="@+id/layout_senhaUser_login"
+                app:layout_constraintStart_toStartOf="@id/layout_senhaUser_login"
+                app:layout_constraintTop_toBottomOf="@id/layout_senhaUser_login" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_login"
+                style="@style/AppTemaButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margem"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="@+id/guidelineVertical_end_boxMain"
+                app:layout_constraintStart_toStartOf="@id/guidelineVertical_start_boxMain"
+                app:layout_constraintTop_toBottomOf="@id/checkbox_Remember" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_createACcount"
+                style="@style/create_account"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margem_button"
+                android:layout_marginBottom="@dimen/margin_botton_login"
+                android:text="@string/create_account"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/guidelineVertical_end_boxMain"
+                app:layout_constraintStart_toStartOf="@id/guidelineVertical_start_boxMain"
+                app:layout_constraintTop_toBottomOf="@id/button_login" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

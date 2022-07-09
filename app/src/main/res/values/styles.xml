@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="button_login">
+        <item name="android:padding">@dimen/meia_margem</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="create_account">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/azul_cortina</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTemaButton" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:padding">@dimen/meia_margem</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:background">@drawable/button_modelo</item>
+    </style>
+</resources>
