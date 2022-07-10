@@ -29,8 +29,8 @@
                 android:id="@+id/nameCreate_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_top_create"
                 android:layout_marginStart="@dimen/margin_comun_create"
+                android:layout_marginTop="@dimen/margin_top_create"
                 android:layout_marginEnd="@dimen/margin_comun_create"
                 android:background="@drawable/cardcreate_model"
                 android:hint="Name"
@@ -55,9 +55,9 @@
                 android:id="@+id/emailCreate_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_comun_create"
                 android:layout_marginTop="@dimen/margin_top_create"
                 android:layout_marginEnd="@dimen/margin_comun_create"
-                android:layout_marginStart="@dimen/margin_comun_create"
                 android:background="@drawable/cardcreate_model"
                 android:hint="Email"
                 app:boxBackgroundColor="@color/primaryTextColor"
@@ -81,8 +81,8 @@
                 android:id="@+id/passwordCreate_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_top_create"
                 android:layout_marginStart="@dimen/margin_comun_create"
+                android:layout_marginTop="@dimen/margin_top_create"
                 android:layout_marginEnd="@dimen/margin_comun_create"
                 android:background="@drawable/cardcreate_model"
                 android:hint="Password"
@@ -107,9 +107,9 @@
                 android:id="@+id/repeatePasswordCreate_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_comun_create"
                 android:layout_marginTop="@dimen/margin_top_create"
                 android:layout_marginEnd="@dimen/margin_comun_create"
-                android:layout_marginStart="@dimen/margin_comun_create"
                 android:background="@drawable/cardcreate_model"
                 android:hint="Repeate password"
                 app:boxBackgroundColor="@color/primaryTextColor"
@@ -130,17 +130,17 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <androidx.appcompat.widget.AppCompatButton
+                style="@style/button_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="CREATE ACCOUNT"
-                style="@style/button_login"
-                android:background="@drawable/button_modelo"
                 android:layout_gravity="center"
-                android:layout_marginTop="36dp"
-                android:layout_marginBottom="20dp"
-                android:textColor="@color/primaryTextColor"
                 android:layout_marginStart="@dimen/margin_comun_create"
-                android:layout_marginEnd="@dimen/margin_comun_create"/>
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="@dimen/margin_comun_create"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_modelo"
+                android:text="CREATE ACCOUNT"
+                android:textColor="@color/primaryTextColor" />
 
         </LinearLayout>
 
