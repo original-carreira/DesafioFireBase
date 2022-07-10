@@ -24,12 +24,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/botaoFlutuanteSavedGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margem"
+                app:backgroundTint="@color/urucun_leve"
+                android:src="@drawable/ic_baseline_camera_alt"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/nameAddGame_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/margin_comun_create"
-                android:layout_marginTop="@dimen/margin_top_create"
                 android:layout_marginEnd="@dimen/margin_comun_create"
                 android:background="@drawable/cardcreate_model"
                 android:hint="Name"
@@ -93,6 +102,21 @@
                     android:lineSpacingMultiplier="1.2"
                     tools:text="@string/description" />
             </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_savedGame"
+                style="@style/button_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_comun_create"
+                android:layout_marginTop="@dimen/dimen_marginTo_bnt_saved"
+                android:layout_marginEnd="@dimen/margin_comun_create"
+                android:layout_marginBottom="@dimen/dimen_marginBoton_bnt_saved"
+                android:background="@drawable/button_modelo"
+                android:text="@string/text_saveGame_addGame"
+                android:textColor="@color/primaryTextColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
 
         </LinearLayout>
 

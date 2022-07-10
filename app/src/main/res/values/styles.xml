@@ -90,7 +90,7 @@
     <style name="texto_addGame">
         <item name="android:fontFamily">@font/roboto</item>
         <item name="android:textAlignment">textStart</item>
-        <item name="android:textColor">@color/fonteTextoCinza</item>
+        <item name="android:textColor">@color/primaryColor</item>
         <item name="android:textSize">24sp</item>
         <item name="android:textStyle">bold</item>
     </style>

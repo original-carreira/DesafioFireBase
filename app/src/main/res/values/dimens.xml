@@ -18,4 +18,6 @@
     <dimen name="dimen_marginTop_description_5dp">5dp</dimen>
     <dimen name="dimen_marginTop_description_15dp">15dp</dimen>
     <dimen name="dimen_textSize_description_18sp">18sp</dimen>
+    <dimen name="dimen_marginTo_bnt_saved">74dp</dimen>
+    <dimen name="dimen_marginBoton_bnt_saved">16dp</dimen>
 </resources>
