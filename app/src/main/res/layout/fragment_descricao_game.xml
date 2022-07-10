@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.DescricaoGameFragment">
+
+
+    <FrameLayout
+        android:id="@+id/box_temaGame"
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:background="@drawable/mkbox">
+
+        <TextView
+            android:id="@+id/text_nomeGame_Description"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="22dp"
+            android:text="@string/texto_nomeDoGame"
+            style="@style/text_nomeGame_Box" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/botaoFlutuanteDescriptionGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end|bottom"
+            android:layout_margin="@dimen/margem"
+            android:backgroundTint="@color/urucun_leve"
+            android:src="@drawable/ic_baseline_add"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_TituloDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_marginStart_description"
+        android:layout_marginTop="@dimen/dimen_marginTop_descrption"
+        android:text="@string/texto_nomeDoGame"
+        style="@style/text_TituloDescrptionGame" />
+
+    <TextView
+        android:id="@+id/text_SubtituloDataGame"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_marginStart="@dimen/dimen_marginStart_description"
+        android:layout_marginTop="@dimen/dimen_marginTop_description_5dp"
+        android:text="@string/texto_data_game"
+        tools:ignore="TextContrastCheck"
+        style="@style/subtituloText_DataLancamento" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimen_marginTop_description_15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_descriptionScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/descriptionGameText"
+                tools:ignore="TextContrastCheck"
+                style="@style/text_scrollView" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

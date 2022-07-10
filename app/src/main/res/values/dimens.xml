@@ -11,4 +11,11 @@
     <dimen name="margin_top_create">26dp</dimen>
     <dimen name="margin_comun_create">10dp</dimen>
     <dimen name="fonte_size_campos">24sp</dimen>
+    <dimen name="dimen_marginTop_descrption">35dp</dimen>
+    <dimen name="dimen_marginStart_description">24dp</dimen>
+    <dimen name="dimen_textSize_description">24sp</dimen>
+    <dimen name="dimen_textSize_description_small">16sp</dimen>
+    <dimen name="dimen_marginTop_description_5dp">5dp</dimen>
+    <dimen name="dimen_marginTop_description_15dp">15dp</dimen>
+    <dimen name="dimen_textSize_description_18sp">18sp</dimen>
 </resources>

@@ -17,6 +17,7 @@
         <item name="android:textSize">24sp</item>
     </style>
 
+
     <style name="AppTemaButton" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:padding">@dimen/meia_margem</item>
         <item name="android:fontFamily">@font/roboto</item>
@@ -24,6 +25,13 @@
         <item name="android:textAlignment">center</item>
         <item name="android:textColor">@color/primaryTextColor</item>
         <item name="android:background">@drawable/button_modelo</item>
+    </style>
+
+    <style name="DescriptionGameText">
+        <item name="android:fontFamily">Roboto</item>
+        <item name="android:textColor">#FF8492A6</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:lineSpacingMultiplier">1.29</item>
     </style>
 
     <style name="ShapeAppearance.ItemGame.Card" parent="ShapeAppearance.MaterialComponents">
@@ -47,6 +55,38 @@
         name="ShapeAppearance.Sunflower.FAB"
         parent="ShapeAppearance.MaterialComponents.SmallComponent" />
 
-    <!-- Add plant button -->
+    <style name="text_nomeGame_Box">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">29sp</item>
+    </style>
+
+    <style name="text_TituloDescrptionGame">
+        <item name="android:background">@drawable/cardcreate_model</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/dimen_textSize_description</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="subtituloText_DataLancamento">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/fonteTextoCinza</item>
+        <item name="android:textSize">@dimen/dimen_textSize_description_small</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="text_scrollView">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/fonteTextoCinza</item>
+        <item name="android:textSize">@dimen/dimen_textSize_description_18sp</item>
+    </style>
+
     <dimen name="button_corner_radius">12dp</dimen>
+
 </resources>
