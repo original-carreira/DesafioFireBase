@@ -87,6 +87,14 @@
         <item name="android:textSize">@dimen/dimen_textSize_description_18sp</item>
     </style>
 
+    <style name="texto_addGame">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/fonteTextoCinza</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
     <dimen name="button_corner_radius">12dp</dimen>
 
 </resources>

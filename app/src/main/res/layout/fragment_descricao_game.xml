@@ -67,6 +67,7 @@
                 android:id="@+id/text_descriptionScrollView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
                 android:text="@string/descriptionGameText"
                 tools:ignore="TextContrastCheck"
                 style="@style/text_scrollView" />

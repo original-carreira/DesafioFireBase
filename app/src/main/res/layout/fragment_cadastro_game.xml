@@ -1,15 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.CadastroGameFragment"
-    android:background="@drawable/wallpaper">
+    android:background="@drawable/wallpaper"
+    tools:context=".ui.home.CadastroGameFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cadastroGame_Box"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/cadastroGame_Box">
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_comun_create"
+            android:layout_marginEnd="@dimen/margin_comun_create"
+            android:background="@drawable/cardcreate_model"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameAddGame_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_comun_create"
+                android:layout_marginTop="@dimen/margin_top_create"
+                android:layout_marginEnd="@dimen/margin_comun_create"
+                android:background="@drawable/cardcreate_model"
+                android:hint="Name"
+                android:textColorHint="@color/fonteTextoCinza"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameCreate_editText"
+                    style="@style/texto_addGame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    tools:text="@string/texto_nomeDoGame" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dataAddGame_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_comun_create"
+                android:layout_marginTop="@dimen/margin_top_create"
+                android:layout_marginEnd="@dimen/margin_comun_create"
+                android:background="@drawable/cardcreate_model"
+                android:hint="@string/createdAt"
+                android:textColorHint="@color/fonteTextoCinza"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dataAddGame_editText"
+                    style="@style/texto_addGame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    tools:text="@string/texto_data_game" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/descriptionAddGame_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_comun_create"
+                android:layout_marginTop="@dimen/margin_top_create"
+                android:layout_marginEnd="@dimen/margin_comun_create"
+                android:background="@drawable/cardcreate_model"
+                android:hint="@string/description"
+                android:textColorHint="@color/fonteTextoCinza"
+                app:boxBackgroundColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/descriptionAddGame_editText"
+                    style="@style/texto_addGame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:lineSpacingMultiplier="1.2"
+                    tools:text="@string/description" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
