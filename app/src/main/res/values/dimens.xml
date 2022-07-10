@@ -5,7 +5,10 @@
     <dimen name="text_margem">16dp</dimen>
     <dimen name="margem">16dp</dimen>
     <dimen name="margem_top_login">41dp</dimen>
-    <dimen name="margin_botton_login">29dp</dimen>
+    <dimen name="margin_botton_login">22dp</dimen>
     <dimen name="margem_button">42dp</dimen>
     <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="margin_top_create">26dp</dimen>
+    <dimen name="margin_comun_create">10dp</dimen>
+    <dimen name="fonte_size_campos">24sp</dimen>
 </resources>

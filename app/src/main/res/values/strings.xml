@@ -7,4 +7,7 @@
     <string name="senha">Senha</string>
     <string name="texto_data_game">Data Lançamento</string>
     <string name="texto_nomeDoGame">Nome do Game</string>
+    <string name="text_password_create">senha do usuário</string>
+    <string name="email_user">Email do usuário</string>
+    <string name="text_senhaUser">Senha do usuário</string>
 </resources>

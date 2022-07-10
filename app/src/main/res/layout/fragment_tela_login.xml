@@ -25,54 +25,59 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guidelineVertical_start_boxMain"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:orientation="vertical"
-                app:layout_constraintGuide_begin="@dimen/margem" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guidelineVertical_end_boxMain"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:orientation="vertical"
-                app:layout_constraintGuide_end="@dimen/margem" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/layout_emailUser_login"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/emaillogin_layout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/text_margem"
-                android:layout_marginTop="@dimen/margem_top_login"
+                android:layout_marginStart="@dimen/margin_comun_create"
+                android:layout_marginTop="@dimen/margin_top_create"
+                android:layout_marginEnd="@dimen/margin_comun_create"
+                android:background="@drawable/cardcreate_model"
+                android:hint="Email"
+                app:boxBackgroundColor="@color/primaryTextColor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/editText_emailUser_login"
+                    android:id="@+id/emailLogin_editText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/email"
-                    android:inputType="text"/>
+                    android:fontFamily="@font/roboto"
+                    android:inputType="text"
+                    android:text="@string/email_user"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/fonte_size_campos"
+                    android:textStyle="normal" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/layout_senhaUser_login"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="0dp"
+                android:id="@+id/senhaUser_login_layout"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/text_margem"
+                android:layout_marginStart="@dimen/margin_comun_create"
+                android:layout_marginTop="@dimen/margin_top_create"
+                android:layout_marginEnd="@dimen/margin_comun_create"
+                android:background="@drawable/cardcreate_model"
+                android:hint="Password"
+                app:boxBackgroundColor="@color/primaryTextColor"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/layout_emailUser_login">
+                app:layout_constraintTop_toBottomOf="@id/emaillogin_layout">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/senhaUser_login_editText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/senha"
-                    tools:ignore="TextContrastCheck" />
+                    android:fontFamily="@font/roboto"
+                    android:inputType="textPassword"
+                    android:text="@string/text_senhaUser"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="@dimen/fonte_size_campos"
+                    android:textStyle="normal" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <CheckBox
@@ -82,20 +87,23 @@
                 android:layout_margin="@dimen/meia_margem"
                 android:padding="@dimen/meia_margem"
                 android:text="@string/remember"
-                app:layout_constraintEnd_toEndOf="@+id/layout_senhaUser_login"
-                app:layout_constraintStart_toStartOf="@id/layout_senhaUser_login"
-                app:layout_constraintTop_toBottomOf="@id/layout_senhaUser_login" />
+                app:layout_constraintEnd_toEndOf="@+id/senhaUser_login_layout"
+                app:layout_constraintStart_toStartOf="@id/senhaUser_login_layout"
+                app:layout_constraintTop_toBottomOf="@id/senhaUser_login_layout" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button_login"
-                style="@style/AppTemaButton"
+                style="@style/button_login"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margem"
+                android:layout_marginStart="@dimen/margin_comun_create"
+                android:layout_marginTop="@dimen/margin_botton_login"
+                android:layout_marginEnd="@dimen/margin_comun_create"
+                android:background="@drawable/button_modelo"
                 android:text="@string/login"
-                android:textAllCaps="false"
-                app:layout_constraintEnd_toEndOf="@+id/guidelineVertical_end_boxMain"
-                app:layout_constraintStart_toStartOf="@id/guidelineVertical_start_boxMain"
+                android:textColor="@color/primaryTextColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/checkbox_Remember" />
 
             <androidx.appcompat.widget.AppCompatTextView
@@ -103,12 +111,12 @@
                 style="@style/create_account"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margem_button"
+                android:layout_marginTop="@dimen/margin_botton_login"
                 android:layout_marginBottom="@dimen/margin_botton_login"
                 android:text="@string/create_account"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/guidelineVertical_end_boxMain"
-                app:layout_constraintStart_toStartOf="@id/guidelineVertical_start_boxMain"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/button_login" />
 
 
