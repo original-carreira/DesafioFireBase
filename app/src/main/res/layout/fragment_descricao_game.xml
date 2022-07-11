@@ -10,18 +10,24 @@
     <FrameLayout
         android:id="@+id/box_temaGame"
         android:layout_width="match_parent"
-        android:layout_height="204dp"
-        android:background="@drawable/mkbox">
+        android:layout_height="204dp">
+
+        <ImageView
+            android:id="@+id/imagemGameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mkbox" />
 
         <TextView
             android:id="@+id/text_nomeGame_Description"
+            style="@style/text_nomeGame_Box"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|start"
             android:layout_marginStart="32dp"
             android:layout_marginBottom="22dp"
-            android:text="@string/texto_nomeDoGame"
-            style="@style/text_nomeGame_Box" />
+            android:text="@string/texto_nomeDoGame" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/botaoFlutuanteDescriptionGame"
@@ -36,22 +42,22 @@
 
     <TextView
         android:id="@+id/text_TituloDescription"
+        style="@style/text_TituloDescrptionGame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/dimen_marginStart_description"
         android:layout_marginTop="@dimen/dimen_marginTop_descrption"
-        android:text="@string/texto_nomeDoGame"
-        style="@style/text_TituloDescrptionGame" />
+        android:text="@string/texto_nomeDoGame" />
 
     <TextView
         android:id="@+id/text_SubtituloDataGame"
+        style="@style/subtituloText_DataLancamento"
         android:layout_width="match_parent"
         android:layout_height="29dp"
         android:layout_marginStart="@dimen/dimen_marginStart_description"
         android:layout_marginTop="@dimen/dimen_marginTop_description_5dp"
         android:text="@string/texto_data_game"
-        tools:ignore="TextContrastCheck"
-        style="@style/subtituloText_DataLancamento" />
+        tools:ignore="TextContrastCheck" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -65,12 +71,12 @@
 
             <TextView
                 android:id="@+id/text_descriptionScrollView"
+                style="@style/text_scrollView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:lineSpacingMultiplier="1.2"
                 android:text="@string/descriptionGameText"
-                tools:ignore="TextContrastCheck"
-                style="@style/text_scrollView" />
+                tools:ignore="TextContrastCheck" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

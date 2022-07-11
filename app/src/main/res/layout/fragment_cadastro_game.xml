@@ -13,6 +13,7 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/linearGame_Box"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_comun_create"
@@ -25,14 +26,14 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/botaoFlutuanteSavedGame"
+                android:id="@+id/botaoFlutuanteAddGame"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="@dimen/margem"
                 android:scaleType="centerCrop"
-                app:backgroundTint="@color/urucun_leve"
                 android:src="@drawable/ic_baseline_camera_alt"
+                app:backgroundTint="@color/urucun_leve"
                 tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
             <com.google.android.material.textfield.TextInputLayout
@@ -117,7 +118,7 @@
                 android:text="@string/text_saveGame_addGame"
                 android:textColor="@color/primaryTextColor"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent" />
 
         </LinearLayout>
 
