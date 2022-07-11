@@ -30,7 +30,7 @@
             android:layout_gravity="center_vertical|end|bottom"
             android:layout_margin="@dimen/margem"
             android:backgroundTint="@color/urucun_leve"
-            android:src="@drawable/ic_baseline_add"
+            android:src="@drawable/ic_baseline_edit"
             tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
     </FrameLayout>
 
