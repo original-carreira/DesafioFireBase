@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import com.example.desafiofirebase.databinding.ActivityMainBinding
 import com.example.desafiofirebase.databinding.ActivitySplashScreenBinding
 
@@ -15,7 +16,7 @@ class Splash_screen : AppCompatActivity() {
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        Handler().postDelayed({
+        Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this@Splash_screen, MainActivity::class.java)
             startActivity(intent)
             finish()

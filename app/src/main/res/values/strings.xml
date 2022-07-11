@@ -14,5 +14,6 @@
     <string name="description">Description</string>
     <string name="createdAt">Created at</string>
     <string name="text_saveGame_addGame">SAVED GAME</string>
+    <string name="add_game_field_error">Campo obrigatório</string>
 
 </resources>

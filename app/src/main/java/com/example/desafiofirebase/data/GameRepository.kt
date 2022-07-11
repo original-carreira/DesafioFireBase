@@ -7,8 +7,9 @@ package com.example.desafiofirebase.data
 
 import android.net.Uri
 import com.example.desafiofirebase.domain.model.Game
+import javax.inject.Inject
 
-class GameRepository (private val dataSource: GameDataSource){
+class GameRepository @Inject constructor (private val dataSource: GameDataSource){
 
     suspend fun getGame(): List<Game> = dataSource.getGame()
 
