@@ -87,3 +87,6 @@ class CadastroGameFragment : Fragment() {
     }
 
 }
+
+// linha 21 - o segundo parâmetro do ActivityResultcontracts e um callback, que é passado no {} fora do contexto do ().
+//callback passado como último parâmetro não precisa ser chamado dentro dos parenteses.
