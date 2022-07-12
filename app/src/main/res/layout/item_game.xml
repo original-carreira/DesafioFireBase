@@ -13,6 +13,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/campo_imagemDogame"
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:scaleType="centerCrop"
@@ -33,12 +34,14 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <TextView
+                android:id="@+id/campoTexto_nomeGame"
                 android:layout_width="238dp"
                 android:layout_height="26dp"
                 android:text="@string/texto_nomeDoGame"
                 android:textAppearance="?attr/textAppearanceHeadline6" />
 
             <TextView
+                android:id="@+id/campoTexto_dataGame"
                 android:layout_width="238dp"
                 android:layout_height="26dp"
                 android:layout_marginTop="8dp"

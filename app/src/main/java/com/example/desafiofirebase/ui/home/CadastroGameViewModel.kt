@@ -11,6 +11,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.desafiofirebase.MainActivity
 import com.example.desafiofirebase.R
+import com.example.desafiofirebase.domain.model.Game
 import com.example.desafiofirebase.domain.usecase.CreateGameUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
@@ -33,6 +34,9 @@ class CadastroGameViewModel @Inject constructor(
     private val _imageUriErroResId = MutableLiveData<Int>()
     val imageUriErroResId: LiveData<Int> = _imageUriErroResId
 
+    private val _gameAdd = MutableLiveData<Game>()
+    val gameAdd: LiveData<Game> = _gameAdd
+
     private var formularioValidacao = false
 
     fun createGame(nameGame: String, dataGame: String, descriptionGame: String,imageUri: Uri?) = viewModelScope.launch {
@@ -46,6 +50,7 @@ class CadastroGameViewModel @Inject constructor(
         if (formularioValidacao){
             try {
                 val game = createGameUseCase(nameGame, dataGame, descriptionGame, imageUri!!)
+                _gameAdd.value = game
             }catch (e: Exception){
                 erroToast("Erro!",MainActivity())
                 //Log.d("CreateGame",e.toString())

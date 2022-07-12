@@ -9,8 +9,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.example.desafiofirebase.R
 import com.example.desafiofirebase.databinding.FragmentCadastroGameBinding
+import com.example.desafiofirebase.util.GAME_KEY
 import com.google.android.material.textfield.TextInputLayout
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -58,6 +60,12 @@ class CadastroGameFragment : Fragment() {
         }
         viewModel.imageUriErroResId.observe(viewLifecycleOwner){
             recursoResId -> binding.botaoFlutuanteAddGame.setBackgroundResource(recursoResId)
+        }
+        viewModel.gameAdd.observe(viewLifecycleOwner){
+            gamesss -> findNavController().run {
+                previousBackStackEntry?.savedStateHandle?.set(GAME_KEY, gamesss)
+                popBackStack()
+        }
         }
     }
 
