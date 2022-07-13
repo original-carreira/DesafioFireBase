@@ -20,7 +20,7 @@ class FirebaseGameDataSource @Inject constructor(
     firebaseStorage: FirebaseStorage
 ): GameDataSource {
 
-    private val documentReference = firebaseFirestore.document("$COLLECTION_ROOT/${com.google.firebase.firestore.BuildConfig.APPLICATION_ID}")
+    private val documentReference = firebaseFirestore.document("$COLLECTION_ROOT/${BuildConfig.APPLICATION_ID}")
     private val storeReference = firebaseStorage.reference
 
     override suspend fun getGame(): List<Game> {
